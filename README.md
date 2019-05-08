@@ -9,18 +9,18 @@ GTZAN
 ***** Q1 *****
 ----------
 Genre    	accuracy
-pop      	    0.41%
-metal    	    0.25%
-disco    	    0.32%
-blues    	    0.07%
-reggae   	    0.33%
+pop      	    41%
+metal    	    25%
+disco    	    32%
+blues    	    7%
+reggae   	    33%
 classical	    -
-rock     	    0.35%
-hiphop   	    0.14%
-country  	    0.32%
-jazz     	    0.16%
+rock     	    35%
+hiphop   	    14%
+country  	    32%
+jazz     	    16%
 ----------
-Overall accuracy:	0.27%
+Overall accuracy:	27%
 ```
 高分者：
 pop和rock類的表現較佳，可能是因為在這兩個音樂類型上，較常使用一般的七聲音階及大小調的樂理技巧在作曲。
@@ -36,7 +36,7 @@ Q1-2結果：
 GiantSteps
 ***** Q1-2 *****
 ----------
-Overall accuracy:	0.22%
+Overall accuracy:	22%
 ```
 如上結果
 
@@ -52,66 +52,66 @@ GTZAN
 'gamma = 1'
 
 Genre    	accuracy
-pop      	    0.40%
-metal    	    0.22%
-disco    	    0.33%
-blues    	    0.07%
-reggae   	    0.32%
+pop      	    40%
+metal    	    22%
+disco    	    33%
+blues    	    7%
+reggae   	    32%
 classical	    -
-rock     	    0.34%
-hiphop   	    0.14%
-country  	    0.34%
-jazz     	    0.16%
+rock     	    34%
+hiphop   	    14%
+country  	    34%
+jazz     	    16%
 
-Overall accuracy:	0.26%
+Overall accuracy:	26%
 ----------
 'gamma = 10'
 
 Genre    	accuracy
-pop      	    0.39%
-metal    	    0.19%
-disco    	    0.29%
-blues    	    0.04%
-reggae   	    0.29%
+pop      	    39%
+metal    	    19%
+disco    	    29%
+blues    	    4%
+reggae   	    29%
 classical	    -
-rock     	    0.31%
-hiphop   	    0.15%
-country  	    0.31%
-jazz     	    0.11%
+rock     	    31%
+hiphop   	    15%
+country  	    31%
+jazz     	    11%
 
-Overall accuracy:	0.24%
+Overall accuracy:	24%
 ----------
 'gamma = 100'
 
 Genre    	accuracy
-pop      	    0.34%
-metal    	    0.19%
-disco    	    0.29%
-blues    	    0.04%
-reggae   	    0.25%
+pop      	    34%
+metal    	    19%
+disco    	    29%
+blues    	    4%
+reggae   	    25%
 classical	    -
-rock     	    0.28%
-hiphop   	    0.10%
-country  	    0.31%
-jazz     	    0.14%
+rock     	    28%
+hiphop   	    10%
+country  	    31%
+jazz     	    14%
 
-Overall accuracy:	0.22%
+Overall accuracy:	22%
 ----------
 'gamma = 1000'
 
 Genre    	accuracy
-pop      	    0.33%
-metal    	    0.19%
-disco    	    0.28%
-blues    	    0.05%
-reggae   	    0.26%
+pop      	    33%
+metal    	    19%
+disco    	    28%
+blues    	    5%
+reggae   	    26%
 classical	    -
-rock     	    0.29%
-hiphop   	    0.09%
-country  	    0.31%
-jazz     	    0.14%
+rock     	    29%
+hiphop   	    9%
+country  	    31%
+jazz     	    14%
 
-Overall accuracy:	0.22%
+Overall accuracy:	22%
 ----------
 ```
 gamma的參數添加，做了非線性的校正。
@@ -127,18 +127,18 @@ Q3結果：
 GTZAN
 ***** Q3 *****
 Genre    	accuracy
-pop      	    0.57%
-metal    	    0.35%
-disco    	    0.49%
-blues    	    0.20%
-reggae   	    0.48%
+pop      	    57%
+metal    	    35%
+disco    	    49%
+blues    	    20%
+reggae   	    48%
 classical	    -
-rock     	    0.49%
-hiphop   	    0.20%
-country  	    0.55%
-jazz     	    0.32%
+rock     	    49%
+hiphop   	    20%
+country  	    55%
+jazz     	    32%
 ----------
-Overall accuracy:	0.41%
+Overall accuracy:	41%
 ```
 這邊結果相較原先基本的template方法有明顯提升。
 而提升的原因其實也很直覺，因為透過關係大小調、同名大小調的「權重」上考量，避免了**錯者全錯**的計算，將得以有效提升準確率。
@@ -152,18 +152,18 @@ Q4結果：
 GTZAN
 ***** Q4 *****
 Genre    	accuracy
-pop      	    0.43%
-metal    	    0.27%
-disco    	    0.30%
-blues    	    0.17%
-reggae   	    0.36%
+pop      	    43%
+metal    	    27%
+disco    	    30%
+blues    	    17%
+reggae   	    36%
 classical	    -
-rock     	    0.35%
-hiphop   	    0.15%
-country  	    0.29%
-jazz     	    0.16%
+rock     	    35%
+hiphop   	    15%
+country  	    29%
+jazz     	    16%
 ----------
-Overall accuracy:	0.28%
+Overall accuracy:	28%
 ```
 KS template比較能呈現大小調音符的分佈關係，然而同Q1是透過correct的計算方式運算，可能會減少了許多可能正確的答案，因此準確率並未顯著提升。
 
@@ -176,7 +176,7 @@ Q4-2結果：
 GiantSteps
 ***** Q4-2 *****
 ----------
-Overall accuracy:	0.28%
+Overall accuracy:	28%
 ```
 如上結果
 
@@ -192,66 +192,66 @@ GTZAN
 'gamma = 1'
 
 Genre    	accuracy
-pop      	    0.43%
-metal    	    0.26%
-disco    	    0.32%
-blues    	    0.17%
-reggae   	    0.35%
+pop      	    43%
+metal    	    26%
+disco    	    32%
+blues    	    17%
+reggae   	    35%
 classical	    -
-rock     	    0.34%
-hiphop   	    0.12%
-country  	    0.31%
-jazz     	    0.15%
+rock     	    34%
+hiphop   	    12%
+country  	    31%
+jazz     	    15%
 
-Overall accuracy:	0.28%
+Overall accuracy:	28%
 ----------
 'gamma = 10'
 
 Genre    	accuracy
-pop      	    0.40%
-metal    	    0.25%
-disco    	    0.27%
-blues    	    0.17%
-reggae   	    0.31%
+pop      	    40%
+metal    	    25%
+disco    	    27%
+blues    	    17%
+reggae   	    31%
 classical	    -
-rock     	    0.33%
-hiphop   	    0.15%
-country  	    0.28%
-jazz     	    0.14%
+rock     	    33%
+hiphop   	    15%
+country  	    28%
+jazz     	    14%
 
-Overall accuracy:	0.26%
+Overall accuracy:	26%
 ----------
 'gamma = 100'
 
 Genre    	accuracy
-pop      	    0.37%
-metal    	    0.25%
-disco    	    0.27%
-blues    	    0.20%
-reggae   	    0.28%
+pop      	    37%
+metal    	    25%
+disco    	    27%
+blues    	    20%
+reggae   	    28%
 classical	    -
-rock     	    0.32%
-hiphop   	    0.12%
-country  	    0.28%
-jazz     	    0.15%
+rock     	    32%
+hiphop   	    12%
+country  	    28%
+jazz     	    15%
 
-Overall accuracy:	0.25%
+Overall accuracy:	25%
 ----------
 'gamma = 1000'
 
 Genre    	accuracy
-pop      	    0.37%
-metal    	    0.25%
-disco    	    0.26%
-blues    	    0.21%
-reggae   	    0.30%
+pop      	    37%
+metal    	    25%
+disco    	    26%
+blues    	    21%
+reggae   	    30%
 classical	    -
-rock     	    0.32%
-hiphop   	    0.11%
-country  	    0.29%
-jazz     	    0.15%
+rock     	    32%
+hiphop   	    11%
+country  	    29%
+jazz     	    15%
 
-Overall accuracy:	0.26%
+Overall accuracy:	26%
 ----------
 ```
 這邊的gamma隨著1, 10, 100, 1000的參數設定有一些變動起伏，更印證實驗的參數拿捏的重要性，也是gamma作為非線性校正上的重要意涵。
@@ -265,18 +265,18 @@ Q4_3結果：
 GTZAN
 ***** Q4_3 *****
 Genre    	accuracy
-pop      	    0.57%
-metal    	    0.39%
-disco    	    0.46%
-blues    	    0.30%
-reggae   	    0.51%
+pop      	    57%
+metal    	    39%
+disco    	    46%
+blues    	    30%
+reggae   	    51%
 classical	    -
-rock     	    0.48%
-hiphop   	    0.22%
-country  	    0.52%
-jazz     	    0.33%
+rock     	    48%
+hiphop   	    22%
+country  	    52%
+jazz     	    33%
 ----------
-Overall accuracy:	0.43%
+Overall accuracy:	43%
 ```
 透過mir_eval並配合ks template是目前運算結果後的最佳解，同時也證明好的運算也必需要配合好的評估標準，才能使結果達到最好的預期。
 
